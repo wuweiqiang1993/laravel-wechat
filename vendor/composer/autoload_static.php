@@ -10,15 +10,15 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
+        '9e090711773bfc38738f5dbaee5a7f14' => __DIR__ . '/..' . '/overtrue/wechat/src/Payment/helpers.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '9e090711773bfc38738f5dbaee5a7f14' => __DIR__ . '/..' . '/overtrue/wechat/src/Payment/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -71,6 +71,7 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'O' => 
         array (
             'Overtrue\\Socialite\\' => 19,
+            'Overtrue\\LaravelWechat\\' => 23,
         ),
         'M' => 
         array (
@@ -223,6 +224,10 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'Overtrue\\Socialite\\' => 
         array (
             0 => __DIR__ . '/..' . '/overtrue/socialite/src',
+        ),
+        'Overtrue\\LaravelWechat\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/overtrue/laravel-wechat/src',
         ),
         'Monolog\\' => 
         array (
@@ -2015,6 +2020,19 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'Monolog\\Processor\\UidProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/UidProcessor.php',
         'Monolog\\Processor\\WebProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/WebProcessor.php',
         'Monolog\\Registry' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Registry.php',
+        'Overtrue\\LaravelWechat\\CacheBridge' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/CacheBridge.php',
+        'Overtrue\\LaravelWechat\\Controllers\\OpenPlatformController' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Controllers/OpenPlatformController.php',
+        'Overtrue\\LaravelWechat\\Events\\OpenPlatform\\Authorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/Authorized.php',
+        'Overtrue\\LaravelWechat\\Events\\OpenPlatform\\Unauthorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/Unauthorized.php',
+        'Overtrue\\LaravelWechat\\Events\\OpenPlatform\\UpdateAuthorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/OpenPlatform/UpdateAuthorized.php',
+        'Overtrue\\LaravelWechat\\Events\\WeChatUserAuthorized' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Events/WeChatUserAuthorized.php',
+        'Overtrue\\LaravelWechat\\Facade' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Facade.php',
+        'Overtrue\\LaravelWechat\\Middleware\\OAuthAuthenticate' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Middleware/OAuthAuthenticate.php',
+        'Overtrue\\LaravelWechat\\Routing\\Adapters\\Adapter' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Routing/Adapters/Adapter.php',
+        'Overtrue\\LaravelWechat\\Routing\\Adapters\\Laravel' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Routing/Adapters/Laravel.php',
+        'Overtrue\\LaravelWechat\\Routing\\Adapters\\Lumen' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Routing/Adapters/Lumen.php',
+        'Overtrue\\LaravelWechat\\Routing\\Router' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/Routing/Router.php',
+        'Overtrue\\LaravelWechat\\ServiceProvider' => __DIR__ . '/..' . '/overtrue/laravel-wechat/src/ServiceProvider.php',
         'Overtrue\\Socialite\\AccessToken' => __DIR__ . '/..' . '/overtrue/socialite/src/AccessToken.php',
         'Overtrue\\Socialite\\AccessTokenInterface' => __DIR__ . '/..' . '/overtrue/socialite/src/AccessTokenInterface.php',
         'Overtrue\\Socialite\\AuthorizeFailedException' => __DIR__ . '/..' . '/overtrue/socialite/src/AuthorizeFailedException.php',
@@ -2628,6 +2646,9 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'Pimple\\Exception\\FrozenServiceException' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Exception/FrozenServiceException.php',
         'Pimple\\Exception\\InvalidServiceIdentifierException' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Exception/InvalidServiceIdentifierException.php',
         'Pimple\\Exception\\UnknownIdentifierException' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Exception/UnknownIdentifierException.php',
+        'Pimple\\Psr11\\Container' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Psr11/Container.php',
+        'Pimple\\Psr11\\ServiceLocator' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Psr11/ServiceLocator.php',
+        'Pimple\\ServiceIterator' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/ServiceIterator.php',
         'Pimple\\ServiceProviderInterface' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/ServiceProviderInterface.php',
         'Pimple\\Tests\\Fixtures\\Invokable' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Fixtures/Invokable.php',
         'Pimple\\Tests\\Fixtures\\NonInvokable' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Fixtures/NonInvokable.php',
@@ -2635,6 +2656,9 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'Pimple\\Tests\\Fixtures\\Service' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Fixtures/Service.php',
         'Pimple\\Tests\\PimpleServiceProviderInterfaceTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/PimpleServiceProviderInterfaceTest.php',
         'Pimple\\Tests\\PimpleTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/PimpleTest.php',
+        'Pimple\\Tests\\Psr11\\ContainerTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Psr11/ContainerTest.php',
+        'Pimple\\Tests\\Psr11\\ServiceLocatorTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/Psr11/ServiceLocatorTest.php',
+        'Pimple\\Tests\\ServiceIteratorTest' => __DIR__ . '/..' . '/pimple/pimple/src/Pimple/Tests/ServiceIteratorTest.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',

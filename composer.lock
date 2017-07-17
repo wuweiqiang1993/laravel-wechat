@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "96dab63bc209b75007f2205e9147b947",
+    "content-hash": "9cd9a3f154d89913d48a46d4bb073ffe",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -988,6 +988,58 @@
             "time": "2017-06-28T20:53:48+00:00"
         },
         {
+            "name": "overtrue/laravel-wechat",
+            "version": "3.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-wechat.git",
+                "reference": "70b655714b5445f9be7f03a1c66c1b6deb26ef33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/overtrue/laravel-wechat/70b655714b5445f9be7f03a1c66c1b6deb26ef33.zip",
+                "reference": "70b655714b5445f9be7f03a1c66c1b6deb26ef33",
+                "shasum": ""
+            },
+            "require": {
+                "overtrue/wechat": "^3.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelWechat\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "EasyWeChat": "Overtrue\\LaravelWechat\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelWechat\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "微信 SDK for Laravel",
+            "keywords": [
+                "laravel",
+                "sdk",
+                "wechat",
+                "weixin"
+            ],
+            "time": "2017-07-03T09:53:13+00:00"
+        },
+        {
             "name": "overtrue/socialite",
             "version": "1.1.1",
             "source": {
@@ -1039,16 +1091,16 @@
         },
         {
             "name": "overtrue/wechat",
-            "version": "3.3.10",
+            "version": "3.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/overtrue/wechat.git",
-                "reference": "7841ea7034adfcdf0f3cf25dcae94345eea4ad42"
+                "reference": "5074d36e1a72df13579c84ed0471d8e0f08122bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/overtrue/wechat/7841ea7034adfcdf0f3cf25dcae94345eea4ad42.zip",
-                "reference": "7841ea7034adfcdf0f3cf25dcae94345eea4ad42",
+                "url": "https://files.phpcomposer.com/files/overtrue/wechat/5074d36e1a72df13579c84ed0471d8e0f08122bb.zip",
+                "reference": "5074d36e1a72df13579c84ed0471d8e0f08122bb",
                 "shasum": ""
             },
             "require": {
@@ -1093,7 +1145,7 @@
                 "weixin",
                 "weixin-sdk"
             ],
-            "time": "2017-07-13T00:32:40+00:00"
+            "time": "2017-07-17T11:09:02+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -1145,16 +1197,16 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v3.1.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "279b56046fb368deacf77e2f8f3bdcea45cc367a"
+                "reference": "729436408ef52f9845f9b60d60b2563f314bf1a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/silexphp/Pimple/279b56046fb368deacf77e2f8f3bdcea45cc367a.zip",
-                "reference": "279b56046fb368deacf77e2f8f3bdcea45cc367a",
+                "url": "https://files.phpcomposer.com/files/silexphp/Pimple/729436408ef52f9845f9b60d60b2563f314bf1a9.zip",
+                "reference": "729436408ef52f9845f9b60d60b2563f314bf1a9",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1219,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1.x-dev"
+                    "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
@@ -1191,7 +1243,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2017-07-03T14:06:46+00:00"
+            "time": "2017-07-17T17:05:21+00:00"
         },
         {
             "name": "psr/container",

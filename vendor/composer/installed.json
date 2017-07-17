@@ -3702,73 +3702,6 @@
         ]
     },
     {
-        "name": "guzzlehttp/guzzle",
-        "version": "6.3.0",
-        "version_normalized": "6.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/guzzle/guzzle.git",
-            "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://files.phpcomposer.com/files/guzzle/guzzle/f4db5a78a5ea468d4831de7f0bf9d9415e348699.zip",
-            "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
-            "shasum": ""
-        },
-        "require": {
-            "guzzlehttp/promises": "^1.0",
-            "guzzlehttp/psr7": "^1.4",
-            "php": ">=5.5"
-        },
-        "require-dev": {
-            "ext-curl": "*",
-            "phpunit/phpunit": "^4.0 || ^5.0",
-            "psr/log": "^1.0"
-        },
-        "suggest": {
-            "psr/log": "Required for using the Log middleware"
-        },
-        "time": "2017-06-22T18:50:49+00:00",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "6.2-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "src/functions_include.php"
-            ],
-            "psr-4": {
-                "GuzzleHttp\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Michael Dowling",
-                "email": "mtdowling@gmail.com",
-                "homepage": "https://github.com/mtdowling"
-            }
-        ],
-        "description": "Guzzle is a PHP HTTP client library",
-        "homepage": "http://guzzlephp.org/",
-        "keywords": [
-            "client",
-            "curl",
-            "framework",
-            "http",
-            "http client",
-            "rest",
-            "web service"
-        ]
-    },
-    {
         "name": "doctrine/cache",
         "version": "v1.6.1",
         "version_normalized": "1.6.1.0",
@@ -3838,6 +3771,73 @@
         "keywords": [
             "cache",
             "caching"
+        ]
+    },
+    {
+        "name": "guzzlehttp/guzzle",
+        "version": "6.3.0",
+        "version_normalized": "6.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/guzzle.git",
+            "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/guzzle/guzzle/f4db5a78a5ea468d4831de7f0bf9d9415e348699.zip",
+            "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/promises": "^1.0",
+            "guzzlehttp/psr7": "^1.4",
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "ext-curl": "*",
+            "phpunit/phpunit": "^4.0 || ^5.0",
+            "psr/log": "^1.0"
+        },
+        "suggest": {
+            "psr/log": "Required for using the Log middleware"
+        },
+        "time": "2017-06-22T18:50:49+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "6.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/functions_include.php"
+            ],
+            "psr-4": {
+                "GuzzleHttp\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "Guzzle is a PHP HTTP client library",
+        "homepage": "http://guzzlephp.org/",
+        "keywords": [
+            "client",
+            "curl",
+            "framework",
+            "http",
+            "http client",
+            "rest",
+            "web service"
         ]
     },
     {
@@ -3945,17 +3945,17 @@
     },
     {
         "name": "pimple/pimple",
-        "version": "v3.1.0",
-        "version_normalized": "3.1.0.0",
+        "version": "v3.2.0",
+        "version_normalized": "3.2.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/silexphp/Pimple.git",
-            "reference": "279b56046fb368deacf77e2f8f3bdcea45cc367a"
+            "reference": "729436408ef52f9845f9b60d60b2563f314bf1a9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/silexphp/Pimple/279b56046fb368deacf77e2f8f3bdcea45cc367a.zip",
-            "reference": "279b56046fb368deacf77e2f8f3bdcea45cc367a",
+            "url": "https://files.phpcomposer.com/files/silexphp/Pimple/729436408ef52f9845f9b60d60b2563f314bf1a9.zip",
+            "reference": "729436408ef52f9845f9b60d60b2563f314bf1a9",
             "shasum": ""
         },
         "require": {
@@ -3965,11 +3965,11 @@
         "require-dev": {
             "symfony/phpunit-bridge": "^3.2"
         },
-        "time": "2017-07-03T14:06:46+00:00",
+        "time": "2017-07-17T17:05:21+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "3.1.x-dev"
+                "dev-master": "3.2.x-dev"
             }
         },
         "installation-source": "dist",
@@ -3997,17 +3997,17 @@
     },
     {
         "name": "overtrue/wechat",
-        "version": "3.3.10",
-        "version_normalized": "3.3.10.0",
+        "version": "3.3.11",
+        "version_normalized": "3.3.11.0",
         "source": {
             "type": "git",
             "url": "https://github.com/overtrue/wechat.git",
-            "reference": "7841ea7034adfcdf0f3cf25dcae94345eea4ad42"
+            "reference": "5074d36e1a72df13579c84ed0471d8e0f08122bb"
         },
         "dist": {
             "type": "zip",
-            "url": "https://files.phpcomposer.com/files/overtrue/wechat/7841ea7034adfcdf0f3cf25dcae94345eea4ad42.zip",
-            "reference": "7841ea7034adfcdf0f3cf25dcae94345eea4ad42",
+            "url": "https://files.phpcomposer.com/files/overtrue/wechat/5074d36e1a72df13579c84ed0471d8e0f08122bb.zip",
+            "reference": "5074d36e1a72df13579c84ed0471d8e0f08122bb",
             "shasum": ""
         },
         "require": {
@@ -4026,7 +4026,7 @@
             "overtrue/phplint": "dev-master",
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2017-07-13T00:32:40+00:00",
+        "time": "2017-07-17T11:09:02+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -4053,6 +4053,60 @@
             "wechat",
             "weixin",
             "weixin-sdk"
+        ]
+    },
+    {
+        "name": "overtrue/laravel-wechat",
+        "version": "3.1.10",
+        "version_normalized": "3.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/overtrue/laravel-wechat.git",
+            "reference": "70b655714b5445f9be7f03a1c66c1b6deb26ef33"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/overtrue/laravel-wechat/70b655714b5445f9be7f03a1c66c1b6deb26ef33.zip",
+            "reference": "70b655714b5445f9be7f03a1c66c1b6deb26ef33",
+            "shasum": ""
+        },
+        "require": {
+            "overtrue/wechat": "^3.3.3"
+        },
+        "time": "2017-07-03T09:53:13+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Overtrue\\LaravelWechat\\ServiceProvider"
+                ],
+                "aliases": {
+                    "EasyWeChat": "Overtrue\\LaravelWechat\\Facade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Overtrue\\LaravelWechat\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "overtrue",
+                "email": "anzhengchao@gmail.com"
+            }
+        ],
+        "description": "微信 SDK for Laravel",
+        "keywords": [
+            "laravel",
+            "sdk",
+            "wechat",
+            "weixin"
         ]
     }
 ]
