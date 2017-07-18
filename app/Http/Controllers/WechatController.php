@@ -21,7 +21,7 @@ class WechatController extends Controller
         $wechat->server->setMessageHandler(function($message){
                 switch ($message->MsgType) {
                     case 'event'://事件
-                        if($message->Event == 'subscribe') {//关注事件
+                        if(\strtolower($message->Event) == 'subscribe') {//关注事件
                             $openid = $message->FromUserName;
                             DB::table('wechat_user')->insertGetId(
                                 ['openid' => $openid]
