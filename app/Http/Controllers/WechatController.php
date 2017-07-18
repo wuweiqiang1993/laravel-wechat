@@ -65,6 +65,7 @@ class WechatController extends Controller
     {
         $wechat = app('wechat');
         $message = ['content' => 'Hello world!'];
-        $result = $wechat->staff->message($message)->to('odOyy0U_B8TMqI6c8WDJYMHc8nAc')->send();
+        //var_dump($wechat->staff->message($message)->to('odOyy0U_B8TMqI6c8WDJYMHc8nAc'));
+        return $wechat->staff->message($message)->to('odOyy0U_B8TMqI6c8WDJYMHc8nAc');
     }
 }
