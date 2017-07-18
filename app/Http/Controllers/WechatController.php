@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Log;
+use EasyWeChat\Message\Text;
 
 class WechatController extends Controller
 {
@@ -64,8 +65,9 @@ class WechatController extends Controller
     public function sendMsg()
     {
         $wechat = app('wechat');
-        $message = ['content' => 'Hello world!'];
-        var_dump($wechat->staff->message($message)->to('odOyy0U_B8TMqI6c8WDJYMHc8nAc'));
+        $message = new Text(['content' => 'Hello world!']);
+        $result = $app->staff->message($message)->to('odOyy0U_B8TMqI6c8WDJYMHc8nAc')->send();
+        //var_dump($wechat->staff->message($message)->to('odOyy0U_B8TMqI6c8WDJYMHc8nAc')->send());
         //return $wechat->staff->message($message)->to('odOyy0U_B8TMqI6c8WDJYMHc8nAc');
     }
 }
