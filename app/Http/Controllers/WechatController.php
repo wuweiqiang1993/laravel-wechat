@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Log;
 
 class WechatController extends Controller
@@ -18,12 +19,58 @@ class WechatController extends Controller
 
         $wechat = app('wechat');
         $wechat->server->setMessageHandler(function($message){
-            return "欢迎关注 overtrue！";
+                switch ($message->MsgType) {
+                    case 'event'://事件
+                        switch ($message->Event) {
+                            case 'subscribe':
+                                $openid = $message->FromUserName;
+                                DB::table('wechat_user')->insertGetId(
+                                    ['openid' => $openid]
+                                );
+                                return '你终于发现我啦小主';
+                                break;
+                            case 'unsubscribe':
+                                return '要暂时离开了吗...';
+                                break;
+                            default:
+                                # code...
+                                break;
+                        }
+                        break;
+                    case 'text'://文字信息
+                        return $message->Content.'，我是复读机略略略';
+                        break;
+                    case 'image'://图片
+                        return '收到图片消息';
+                        break;
+                    case 'voice'://语言
+                        return '收到语音消息';
+                        break;
+                    case 'video'://视频
+                        return '收到视频消息';
+                        break;
+                    case 'location'://坐标
+                        return '收到坐标消息';
+                        break;
+                    case 'link'://连接
+                        return '收到链接消息';
+                        break;
+                    // ... 其它消息
+                    default://其他
+                        return '收到其它消息';
+                        break;
+                }
         });
 
         Log::info('return response.');
 
-        return $wechat->server->serve();
-        return 'wechat';
+        $response = $wechat->server->serve();
+        $response->send();
+    }
+
+    public function sendMsg()
+    {
+        $wechat = app('wechat');
+
     }
 }
