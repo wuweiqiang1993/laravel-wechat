@@ -58,8 +58,7 @@ class WechatController extends Controller
 
         Log::info('return response.');
 
-        $response = $wechat->server->serve();
-        $response->send();
+        return $wechat->server->serve();
     }
 
     public function sendMsg()
