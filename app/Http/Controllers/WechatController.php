@@ -24,7 +24,7 @@ class WechatController extends Controller
                         if(strtolower($message->Event) == 'subscribe') {//关注事件
                             $openid = $message->FromUserName;
                             DB::table('wechat_user')->insertGetId(
-                                ['openid' => $openid]
+                                ['wx_openid' => $openid]
                             );
                             Log::info($openid.' subscribed');
                             return '你终于发现我啦小主';
