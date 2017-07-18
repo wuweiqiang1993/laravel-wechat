@@ -21,23 +21,17 @@ class WechatController extends Controller
         $wechat->server->setMessageHandler(function($message){
                 switch ($message->MsgType) {
                     case 'event'://事件
-                        switch ($message->Event) {
-                            case 'subscribe':
-                                $openid = $message->FromUserName;
-                                DB::table('wechat_user')->insertGetId(
-                                    ['openid' => $openid]
-                                );
-                                return '你终于发现我啦小主';
-                                break;
-                            case 'unsubscribe':
-                                return '要暂时离开了吗...';
-                                break;
-                            default:
-                                # code...
-                                break;
+                        if($message->Event == 'subscribe') {//关注事件
+                            $openid = $message->FromUserName;
+                            DB::table('wechat_user')->insertGetId(
+                                ['openid' => $openid]
+                            );
+                            Log::info($openid.' subscribed');
+                            return '你终于发现我啦小主';
                         }
                         break;
                     case 'text'://文字信息
+                        Log::info('Msg: '.$message->Content);
                         return $message->Content.'，我是复读机略略略';
                         break;
                     case 'image'://图片
