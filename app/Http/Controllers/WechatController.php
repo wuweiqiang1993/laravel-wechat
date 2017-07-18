@@ -60,10 +60,5 @@ class WechatController extends Controller
 
         return $wechat->server->serve();
     }
-
-    public function sendMsg()
-    {
-        $wechat = app('wechat');
-
-    }
+    
 }

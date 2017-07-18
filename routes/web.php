@@ -15,4 +15,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::any('/wechat','WechatController@serve');
-Route::any('/wechat/sendMsg','WechatController@sendMsg');
