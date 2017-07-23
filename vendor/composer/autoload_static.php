@@ -51,6 +51,7 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
@@ -180,6 +181,10 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'Symfony\\Component\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+        'Symfony\\Component\\DomCrawler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dom-crawler',
         ),
         'Symfony\\Component\\Debug\\' => 
         array (
@@ -339,6 +344,7 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\MultithreadingRequest' => __DIR__ . '/../..' . '/app/Console/Commands/MultithreadingRequest.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -346,6 +352,7 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\WechatController' => __DIR__ . '/../..' . '/app/Http/Controllers/WechatController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -3167,6 +3174,17 @@ class ComposerStaticInit20b114a1158d32a2361d726569645431
         'Symfony\\Component\\Debug\\FatalErrorHandler\\FatalErrorHandlerInterface' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedFunctionFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedFunctionFatalErrorHandler.php',
         'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedMethodFatalErrorHandler' => __DIR__ . '/..' . '/symfony/debug/FatalErrorHandler/UndefinedMethodFatalErrorHandler.php',
+        'Symfony\\Component\\DomCrawler\\AbstractUriElement' => __DIR__ . '/..' . '/symfony/dom-crawler/AbstractUriElement.php',
+        'Symfony\\Component\\DomCrawler\\Crawler' => __DIR__ . '/..' . '/symfony/dom-crawler/Crawler.php',
+        'Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/ChoiceFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FileFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FileFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\FormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/FormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\InputFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/InputFormField.php',
+        'Symfony\\Component\\DomCrawler\\Field\\TextareaFormField' => __DIR__ . '/..' . '/symfony/dom-crawler/Field/TextareaFormField.php',
+        'Symfony\\Component\\DomCrawler\\Form' => __DIR__ . '/..' . '/symfony/dom-crawler/Form.php',
+        'Symfony\\Component\\DomCrawler\\FormFieldRegistry' => __DIR__ . '/..' . '/symfony/dom-crawler/FormFieldRegistry.php',
+        'Symfony\\Component\\DomCrawler\\Image' => __DIR__ . '/..' . '/symfony/dom-crawler/Image.php',
+        'Symfony\\Component\\DomCrawler\\Link' => __DIR__ . '/..' . '/symfony/dom-crawler/Link.php',
         'Symfony\\Component\\EventDispatcher\\ContainerAwareEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/ContainerAwareEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
         'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcherInterface' => __DIR__ . '/..' . '/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php',

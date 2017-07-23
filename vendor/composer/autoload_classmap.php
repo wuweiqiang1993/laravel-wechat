@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Console\\Commands\\MultithreadingRequest' => $baseDir . '/app/Console/Commands/MultithreadingRequest.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -13,6 +14,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\WechatController' => $baseDir . '/app/Http/Controllers/WechatController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -2834,6 +2836,17 @@ return array(
     'Symfony\\Component\\Debug\\FatalErrorHandler\\FatalErrorHandlerInterface' => $vendorDir . '/symfony/debug/FatalErrorHandler/FatalErrorHandlerInterface.php',
     'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedFunctionFatalErrorHandler' => $vendorDir . '/symfony/debug/FatalErrorHandler/UndefinedFunctionFatalErrorHandler.php',
     'Symfony\\Component\\Debug\\FatalErrorHandler\\UndefinedMethodFatalErrorHandler' => $vendorDir . '/symfony/debug/FatalErrorHandler/UndefinedMethodFatalErrorHandler.php',
+    'Symfony\\Component\\DomCrawler\\AbstractUriElement' => $vendorDir . '/symfony/dom-crawler/AbstractUriElement.php',
+    'Symfony\\Component\\DomCrawler\\Crawler' => $vendorDir . '/symfony/dom-crawler/Crawler.php',
+    'Symfony\\Component\\DomCrawler\\Field\\ChoiceFormField' => $vendorDir . '/symfony/dom-crawler/Field/ChoiceFormField.php',
+    'Symfony\\Component\\DomCrawler\\Field\\FileFormField' => $vendorDir . '/symfony/dom-crawler/Field/FileFormField.php',
+    'Symfony\\Component\\DomCrawler\\Field\\FormField' => $vendorDir . '/symfony/dom-crawler/Field/FormField.php',
+    'Symfony\\Component\\DomCrawler\\Field\\InputFormField' => $vendorDir . '/symfony/dom-crawler/Field/InputFormField.php',
+    'Symfony\\Component\\DomCrawler\\Field\\TextareaFormField' => $vendorDir . '/symfony/dom-crawler/Field/TextareaFormField.php',
+    'Symfony\\Component\\DomCrawler\\Form' => $vendorDir . '/symfony/dom-crawler/Form.php',
+    'Symfony\\Component\\DomCrawler\\FormFieldRegistry' => $vendorDir . '/symfony/dom-crawler/FormFieldRegistry.php',
+    'Symfony\\Component\\DomCrawler\\Image' => $vendorDir . '/symfony/dom-crawler/Image.php',
+    'Symfony\\Component\\DomCrawler\\Link' => $vendorDir . '/symfony/dom-crawler/Link.php',
     'Symfony\\Component\\EventDispatcher\\ContainerAwareEventDispatcher' => $vendorDir . '/symfony/event-dispatcher/ContainerAwareEventDispatcher.php',
     'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher' => $vendorDir . '/symfony/event-dispatcher/Debug/TraceableEventDispatcher.php',
     'Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcherInterface' => $vendorDir . '/symfony/event-dispatcher/Debug/TraceableEventDispatcherInterface.php',

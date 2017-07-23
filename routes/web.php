@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 Route::any('/wechat','WechatController@serve');
 Route::get('/sendMsg','WechatController@sendMsg');
+Route::get('/home','HomeController@index');
