@@ -13,7 +13,7 @@ class UserModel extends Model
     
     public function addUser($message)
     {
-         DB::beginTransaction();
+        DB::beginTransaction();
         $this->insert($message);
         DB::commit();
     }
